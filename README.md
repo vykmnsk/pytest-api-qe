@@ -19,11 +19,11 @@ Verify python/pip are installed:
 ## Configure
 set API endpoint URL in environment variable (Mac, Linux):
 
-    export TEST_API_URL=https://...
+    export TEST_API_URL=https://.../api/vi/festivals
 
 or on Windows:
 
-    set TEST_API_URL=https://...
+    set TEST_API_URL=https://.../api/vi/festivals
 
 ## Run
 #### All tests
