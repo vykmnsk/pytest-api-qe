@@ -16,10 +16,16 @@ Verify python/pip are installed:
 	pip install --upgrade pip
 	pip install -r reqs.txt
 
-## Run tests
+## Configure
+set API endpoint URL in environment variable (Mac, Linux):
 
-### on Local machine
+    export TEST_API_URL=https://...
 
+or on Windows:
+
+    set TEST_API_URL=https://...
+
+## Run
 #### All tests
 
     pytest
