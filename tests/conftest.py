@@ -4,11 +4,12 @@ import requests
 
 
 API_URL = os.getenv('TEST_API_URL')
+HEADERS = {'accept': 'text/plain'}
 
 
 @pytest.fixture(scope='session')
 def get_response():
-    return requests.get(API_URL)
+    return requests.get(API_URL, headers=HEADERS)
 
 
 @pytest.fixture(scope='session')
