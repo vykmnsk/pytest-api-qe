@@ -6,7 +6,7 @@ def test_response_code(get_response):
 
 
 def test_response_not_empty(get_response):
-    assert get_response.content, 'empty response'
+    assert get_response.text, 'Expect non-empty response'
 
 
 def test_response_is_json(get_response):

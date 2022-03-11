@@ -30,10 +30,11 @@ or on Windows:
 
     pytest
 
-#### All tests with debugger on error
+#### Tests in particlar file
 
-    pytest --pdb
+    pytest tests/test_smoke.py
 
-#### Deactivate virtual environment when finished
+#### Test(s) with matching name and debugger on error
 
-    deactivate
+    pytest -k header --pdb
+

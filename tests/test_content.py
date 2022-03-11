@@ -24,5 +24,6 @@ def test_model_band(get_response):
 
 def extract_json(get_response):
     jcontent = common.parse_json(get_response)
-    assert len(jcontent) > 0, f"Expect non-emply list in response={get_response.text}"
+    assert type(jcontent) == list, \
+        f"Expect JSON list in response={get_response.text[0:1000]}"
     return jcontent

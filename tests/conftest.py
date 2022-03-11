@@ -4,7 +4,7 @@ import requests
 
 
 API_URL = os.getenv('TEST_API_URL')
-HEADERS = {'accept': 'text/plain'}
+HEADERS = {'accept': 'application/json'}
 
 
 @pytest.fixture(scope='session')
